@@ -1,0 +1,66 @@
+body {
+	background: -webkit-radial-gradient(white, gray, blue);
+}
+
+
+.test {
+	position: absolute; /* or absolute */
+	left: 10%;
+	top: 15%;
+	width: 100px;
+    height: 140px;
+	background-image: url("./megaman-jump-even.png");
+
+}
+
+.test:hover{
+	-webkit-animation: playtest 0.8s steps(7) infinite;
+}
+
+.walk {
+	position: absolute; /* or absolute */
+	left: 30%;
+	top: 50%;
+	width: 400px;
+    height: 350px;
+	background-image: url("./megaman-walk.png");
+	-webkit-animation: playwalk 0.8s steps(4) infinite;
+
+}
+
+.walk:hover{
+	-webkit-animation: playwalk 0.8s steps(4) infinite;
+}
+
+.capsule {
+	position: absolute; /* or absolute */
+	left: 30%;
+	top: 10%;
+	width: 120px;
+    height: 198px;
+	background-image: url("./capsule-flash.png");
+}
+
+.capsule:hover {
+	-webkit-animation: capsuleflash 0.8s steps(3) infinite;
+}
+
+@-webkit-keyframes playtest {
+   from { background-position:   0px; left: 10%; }
+     to { background-position: -700px; left: 20%; }
+   
+}
+
+@-webkit-keyframes playwalk {
+   from { background-position:   0px; }
+     to { background-position: -1600px; }
+   
+}
+
+
+@-webkit-keyframes capsuleflash {
+   from { background-position:   0px; }
+     to { background-position: -360px; }
+   
+}
+
